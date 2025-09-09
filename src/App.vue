@@ -29,11 +29,23 @@
     </div>
   </form>
 
-  <ProductCard/>
+  <section class="product-list">
+    <ProductCard/>
+    <ProductCard/>
+    <ProductCard/>
+  </section>
+  
 </main>
 </template>
 
 <style scoped>
+
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+  }
   form {
     margin-top: 1rem;
     display: flex;
